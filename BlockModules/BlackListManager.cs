@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace DuvyGuard_Firewall
+namespace RRGuard_Firewall
 {
     public class BlackListManager
     {

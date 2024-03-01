@@ -4,13 +4,13 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada con un ensamblado.
-[assembly: AssemblyTitle("DuvyGuard Firewall")]
+[assembly: AssemblyTitle("RRGuard Firewall")]
 [assembly: AssemblyDescription("Firewall AntiDDoS")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("DuvyGuard")]
-[assembly: AssemblyProduct("DuvyGuard Firewall")]
+[assembly: AssemblyCompany("RRGuard")]
+[assembly: AssemblyProduct("RRGuard Firewall")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
-[assembly: AssemblyTrademark("DuvyGuard")]
+[assembly: AssemblyTrademark("RRGuard")]
 [assembly: AssemblyCulture("")]
 
 // Si establece ComVisible en false, los tipos de este ensamblado no estarán visibles 

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DuvyGuard_Firewall.CustomForms
+namespace RRGuard_Firewall.CustomForms
 {
     public partial class ConfigForm : Form
     {

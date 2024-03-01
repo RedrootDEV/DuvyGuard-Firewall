@@ -1,8 +1,8 @@
-﻿using DuvyGuard_Firewall.CustomForms;
+﻿using RRGuard_Firewall.CustomForms;
 using System;
 using System.Windows.Forms;
 
-namespace DuvyGuard_Firewall
+namespace RRGuard_Firewall
 {
     public partial class Main : Form
     {
@@ -18,7 +18,7 @@ namespace DuvyGuard_Firewall
         private Timer cleanupTimer;
         public static int[] portsToMonitor;
         public DateTime startTime = DateTime.Now;
-        public static bool duvyEnable = false;
+        public static bool rrEnable = false;
 
         public Main()
         {
@@ -99,7 +99,7 @@ namespace DuvyGuard_Firewall
         }
         private void SetValues()
         {
-            originalTitle = "DuvyGard Firewall";
+            originalTitle = "RRGuard Firewall";
             lang = config.Language;
 
             maxIpConnections = config.MaxConnections;
@@ -110,7 +110,7 @@ namespace DuvyGuard_Firewall
 
             portsToMonitor = config.PortsToMonitor;
 
-            duvyEnable = config.EnabledByDefault;
+            rrEnable = config.EnabledByDefault;
 
             if (antiProxyEnabled)
             {
@@ -134,7 +134,7 @@ namespace DuvyGuard_Firewall
             };
             printTimer.Tick += new EventHandler(TCPMonitor.PrintActiveTcpConnections);
 
-            if (duvyEnable)
+            if (rrEnable)
                 printTimer.Start();
 
             cleanupTimer = new Timer
@@ -143,7 +143,7 @@ namespace DuvyGuard_Firewall
             };
             cleanupTimer.Tick += new EventHandler(TCPMonitor.CleanupIpConnectionCount);
 
-            if (duvyEnable)
+            if (rrEnable)
                 cleanupTimer.Start();
 
             blockDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -189,7 +189,7 @@ namespace DuvyGuard_Firewall
                     antiProxySetLabel.Text = "Deshabilitado";
                 }
 
-                if (duvyEnable)
+                if (rrEnable)
                 {
                     statusSetlabel.ForeColor = System.Drawing.Color.Green;
                     statusSetlabel.Text = "Activo";
@@ -240,7 +240,7 @@ namespace DuvyGuard_Firewall
                     antiProxySetLabel.Text = "Desabilitado";
                 }
 
-                if (duvyEnable)
+                if (rrEnable)
                 {
                     statusSetlabel.ForeColor = System.Drawing.Color.Green;
                     statusSetlabel.Text = "Ativo";
@@ -291,7 +291,7 @@ namespace DuvyGuard_Firewall
                     antiProxySetLabel.Text = "Disabled";
                 }
 
-                if (duvyEnable)
+                if (rrEnable)
                 {
                     statusSetlabel.ForeColor = System.Drawing.Color.Green;
                     statusSetlabel.Text = "Active";
@@ -339,10 +339,9 @@ namespace DuvyGuard_Firewall
 
         private void aboutButton_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("DuvyGuard © 2024\n" +
+            MessageBox.Show("RRGuard © 2024\n" +
                 "AntiDDoS / GeoBlocker\n" +
-                "Discord: du_vy\n" +
-                "TSM: Duvy");
+                "Discord: incarnategg");
         }
 
         private void blackListIPToolStripMenuItem_Click(object sender, EventArgs e)
@@ -371,9 +370,9 @@ namespace DuvyGuard_Firewall
 
         private void changeStartStopButton()
         {
-            if (duvyEnable)
+            if (rrEnable)
             {
-                duvyEnable = false;
+                rrEnable = false;
                 statusSetlabel.ForeColor = System.Drawing.Color.Crimson;
                 if (lang == "es")
                 {
@@ -396,7 +395,7 @@ namespace DuvyGuard_Firewall
             }
             else
             {
-                duvyEnable = true;
+                rrEnable = true;
                 statusSetlabel.ForeColor = System.Drawing.Color.Green;
                 if (lang == "es")
                 {

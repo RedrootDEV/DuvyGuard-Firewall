@@ -1,5 +1,5 @@
 ﻿
-namespace DuvyGuard_Firewall
+namespace RRGuard_Firewall
 {
     partial class Main
     {
@@ -349,7 +349,7 @@ namespace DuvyGuard_Firewall
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DuvyGuard_Firewall.Properties.Resources.Sin_título_1;
+            this.pictureBox1.Image = global::RRGuard_Firewall.Properties.Resources.Sin_título_1;
             this.pictureBox1.Location = new System.Drawing.Point(12, 27);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(788, 97);
@@ -390,7 +390,7 @@ namespace DuvyGuard_Firewall
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main";
-            this.Text = "DuvyGuard Firewall";
+            this.Text = "RRGuard Firewall";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.blockDataGrid)).EndInit();

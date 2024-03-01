@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace DuvyGuard_Firewall
+namespace RRGuard_Firewall
 {
     public class FirewallBlocker
     {
@@ -9,7 +9,7 @@ namespace DuvyGuard_Firewall
         {
             try
             {
-                string ruleName = $"DuvyGuard_BlockIP_{ip}";
+                string ruleName = $"RRGuard_BlockIP_{ip}";
 
                 // Verificar si la regla ya existe antes de intentar agregarla
                 if (RuleExists(ruleName))

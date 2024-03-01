@@ -1,5 +1,5 @@
 ﻿
-namespace DuvyGuard_Firewall.CustomForms
+namespace RRGuard_Firewall.CustomForms
 {
     partial class ConfigForm
     {
@@ -237,7 +237,7 @@ namespace DuvyGuard_Firewall.CustomForms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ConfigForm";
-            this.Text = "DuvyGuard Config";
+            this.Text = "RRGuard Config";
             this.ResumeLayout(false);
             this.PerformLayout();
 

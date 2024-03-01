@@ -3,7 +3,7 @@ using System.Collections.Specialized;
 using System.IO;
 using System.Net;
 
-namespace DuvyGuard_Firewall
+namespace RRGuard_Firewall
 {
     class DiscordWebhook
     {
@@ -21,7 +21,7 @@ namespace DuvyGuard_Firewall
             {
                 string json = JsonConvert.SerializeObject(new
                 {
-                    username = "DuvyGuard",
+                    username = "RRGuard",
                     embeds = new[]
                     {
                         new
@@ -43,7 +43,7 @@ namespace DuvyGuard_Firewall
                             },
                             footer = new
                             {
-                                text = "DuvyGuard Firewall © 2024",
+                                text = "RRGuard Firewall © 2024",
                                 icon_url = "https://i.imgur.com/mQsCOHj.png"
                             }
                         }
@@ -70,7 +70,7 @@ namespace DuvyGuard_Firewall
             {
                 {
                     "username",
-                    "DuvyGuard"
+                    "RRGuard"
                 },
                 {
                     "avatar_url",

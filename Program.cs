@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace DuvyGuard_Firewall
+namespace RRGuard_Firewall
 {
     static class Program
     {

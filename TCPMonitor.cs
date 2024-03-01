@@ -1,9 +1,9 @@
-﻿using DuvyGuard_Firewall.CustomForms;
+﻿using RRGuard_Firewall.CustomForms;
 using System;
 using System.Collections.Generic;
 using System.Net.NetworkInformation;
 
-namespace DuvyGuard_Firewall
+namespace RRGuard_Firewall
 {
     public class TCPMonitor
     {

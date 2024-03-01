@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.InteropServices;
 
-namespace DuvyGuard_Firewall
+namespace RRGuard_Firewall
 {
     internal static class BlockIP
     {

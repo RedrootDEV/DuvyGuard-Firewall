@@ -1,5 +1,5 @@
 ﻿
-namespace DuvyGuard_Firewall.CustomForms
+namespace RRGuard_Firewall.CustomForms
 {
     partial class BlackListForm
     {

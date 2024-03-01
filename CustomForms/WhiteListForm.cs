@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace DuvyGuard_Firewall.CustomForms
+namespace RRGuard_Firewall.CustomForms
 {
     public partial class WhiteListForm : Form
     {
